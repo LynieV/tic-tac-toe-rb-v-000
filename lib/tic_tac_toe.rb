@@ -97,7 +97,7 @@ def play(board)
     turn(board)
   end
   if winner(board)
-    puts "Congratulations #{won?(board)[0]}"
+    puts "Congratulations #{won?(board)}"
   else
     puts "Cats Game!"
   end
