@@ -93,9 +93,11 @@ def winner(board)
 end
 
 def play(board)
-  counter = 0
-  until counter == 9
+  until over?(board)
     turn(board)
-    counter += 1
+  if winner(board)
+    puts "Congratulations #{won?(board)[0]}"
+  else 
+    puts "Cats Game!"
   end
 end
